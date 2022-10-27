@@ -144,6 +144,18 @@
     .container smartphone .nubank {
       height: 1.5rem;
     }
+
+    a.left {
+      float: left;
+    }
+
+    a.right {
+      float: right;
+    }
+
+    footer div {
+      width: 80%;
+    }
   </style>
   <script src="js/clipboardtext.js"></script>
 </head>
@@ -157,10 +169,15 @@
     <canvas width="1080" height="1080"></canvas>
 
     <footer>
-      <a href="https://github.com/alvaroreis/bolsonaro2turno" target="_blank">
-        <img src="img/github-logo.svg" />
-        <span>alvaroreis/bolsonaro2turno</span>
-      </a>
+      <div>
+        <a href="https://github.com/alvaroreis/bolsonaro2turno" class="left" target="_blank">
+          <img src="img/github-logo.svg" />
+          <span style="text-transform: uppercase;">alvaroreis/bolsonaro2turno</span>
+        </a>
+        <a href="https://github.com/alvaroreis" class="right" target="_blank">
+          <span style="text-transform: uppercase;">quem sou eu?</span>
+        </a>
+      </div>
     </footer>
 
 
@@ -389,7 +406,7 @@
 
         context.save();
 
-        context.translate(540, 348);
+        context.translate(540, 360);
         context.rotate((-2 * Math.PI) / 180);
 
         context.textBaseline = "middle";
@@ -398,17 +415,18 @@
           document.querySelector("input").value.trim()
         ).width;
 
-        context.fillStyle = "#1ABC4C";
+        // context.fillStyle = "#1da60e";
+        context.fillStyle = "#19bb4c";
         roundRect(
           context,
-          -width / 2 - 25,
-          -184 / 2,
-          width + 25 * 2,
-          184,
+          -width / 2 - 40,
+          -220 / 2,
+          width + 40 * 2,
+          210,
           21.66
         );
 
-        context.fillStyle = "white";
+        context.fillStyle = "#f0f0f0";
         context.fillText(
           document.querySelector("input").value.trim(),
           -width / 2,
