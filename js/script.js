@@ -69,7 +69,7 @@ document.querySelector("a#shareLink").addEventListener("click", async (e) => {
     const image = await file("./img/image.png", "image")
     const data = {
         title: 'Flyer Bolsonaro 2º Turno',
-        text: 'Flyer Bolsonaro 2º Turno',
+        text: 'Gere um Flyer com o seu nome de apoio ao Bolsonaro 2º no Turno:',
         url: 'https://alvaroreis.github.io/bolsonaro2turno/',
         files: [image]
     }
