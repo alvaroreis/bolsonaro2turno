@@ -19,7 +19,6 @@ Aplicação que tem como intuito ajudar a [OPERAÇÃO VIRA VOTO](https://www.ope
    - [📝 Licença](#LICENSE) -->
 
    - [📖 Sobre o App](#Sobre-o-App)
-   - [👨🏽‍💻 Desenvolvimento](#Sobre-o-desenvolvimento)
    - [📱 Screenshots](#Screenshots)
    - [📞 Contato](#-d%C3%BAvida-cr%C3%ADtica-elogio-ou-sugest%C3%A3o)
    - [📝 Licença](#LICENSE)
@@ -31,7 +30,10 @@ Aplicação que tem como intuito ajudar a [OPERAÇÃO VIRA VOTO](https://www.ope
 📱 Aplicação que tem como intuito ajudar a [OPERAÇÃO VIRA VOTO](https://www.operacaoviravoto.com.br).
 
 <h2>Screenshots</h2>
-<img src="https://github.com/alvaroreis/bolsonaro2turno/blob/main/img/image.png?raw=true" height="700" title="Modelo do Flyer">
+<p>
+    <img src="https://github.com/alvaroreis/bolsonaro2turno/blob/main/img/image.png?raw=true" height="400" title="Modelo do Flyer Padrão">
+    <img src="https://github.com/alvaroreis/bolsonaro2turno/blob/main/types/simple/metadata.png?raw=true" height="400" title="Modelo do Flyer Amarelo">
+</p>
 <br />
 
 <h3 align="center">👇Dúvida, Crítica, Elogio ou Sugestão</h3>
