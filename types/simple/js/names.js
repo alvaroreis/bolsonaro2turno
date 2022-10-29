@@ -159,8 +159,5 @@ const names = [
     "Isabel",
 ];
 
-document.querySelector("input#tipo-padrao").value =
-    names[Math.floor(Math.random() * names.length)];
-
 document.querySelector("input#tipo-tag").value =
     names[Math.floor(Math.random() * names.length)];

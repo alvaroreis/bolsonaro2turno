@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta name="author" content="Álvaro Barros">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+
+    <!-- Primary Meta Tags -->
+    <title>Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome</title>
+    <meta name="title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+    <meta name="description"
+        content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvaroreis.github.io/bolsonaro2turno/" />
+    <meta property="og:title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+    <meta property="og:description"
+        content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+    <meta property="og:image" itemprop="image" content="https://alvaroreis.github.io/bolsonaro2turno/metadata.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://alvaroreis.github.io/bolsonaro2turno/" />
+    <meta property="twitter:title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+    <meta property="twitter:description"
+        content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+    <meta property="twitter:image" content="https://alvaroreis.github.io/bolsonaro2turno/metadata.png" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link href="../../style/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <noscript>
+        <div>Para continuar habilite o JavaScript</div>
+    </noscript>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://alvaroreis.github.io/bolsonaro2turno"><strong
+                    class="text-warning">Flyer
+                    Bolsonaro</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://alvaroreis.github.io/bolsonaro2turno/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Modelos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://alvaroreis.github.io/bolsonaro2turno/types/simple/index.html">
+                                    <img src="./metadata.png" height="30px"> Amarelo (Tag) </a></li>
+                            <!-- <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="d-flex text-center text-white">
+        <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+            <header class="mb-auto d-flex justify-content-center">
+                <canvas width="1080" height="1080"></canvas>
+            </header>
+
+            <main class="px-4 mx-4">
+
+                <div class="input-group">
+                    <input type="text" class="form-control" id="tipo-tag" aria-label="Informe seu nome"
+                        placeholder="Informe seu nome">
+                    <button type="button" id="save" class=" btn btn-success fw-bold pl-4 pr-4">Salvar</button>
+                    <button type="button" class="btn btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false" value="Compartilhar">
+                        <span class="p-1">Compartilhar</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" id="shareImage">Imagem</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" id="shareLink">Link da página</a></li>
+                    </ul>
+                </div>
+
+                <p class="px-3 mt-3"> Colabore com esse projeto <a target="_blank"
+                        href="https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY" class="link-warning">clicando aqui</a>.</p>
+            </main>
+
+            <footer class="mt-auto text-white-50 px-3">
+                <div class="row d-none d-md-inline-flex w-100">
+
+                    <div class="col-md-2">
+                        <p class="text-center">
+                            <img src="../../img/github.png" height="20" />
+                            <a href="https://github.com/alvaroreis/bolsonaro2turno" target="_blank" class="text-white">
+                                Repositório
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p class="text-center">
+                            <img src="../../img/linkedin.png" height="20" />
+                            <a href="https://www.linkedin.com/in/reisalvaro/" target="_blank" class="text-white">
+                                reisalvaro
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="text-center">
+                            <img src="../../img/instagram.png" height="20" alt="Instagram">
+                            <a href="https://www.instagram.com/_alvaroreis/" target="_blank"
+                                class="text-white">_alvaroreis</a>
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <br />
+                        <p class="text-end">Desenvolvido por <a href="https://github.com/alvaroreis" target="_blank"
+                                class="text-white">Álvaro
+                                Barros</a> </p>
+                    </div>
+                </div>
+
+                <div class="row d-sm-inline-flex w-100 d-md-none">
+                    <div class="col-sm-12 d-sm-inline-flex text-center">
+                        <div class="col-sm-4">
+                            <p>
+                                <img src="../../img/github.png" height="20" />
+                                <a href="https://github.com/alvaroreis/bolsonaro2turno" target="_blank"
+                                    class="text-white">
+                                    Repositório
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>
+                                <img src="../../img/linkedin.png" height="20" alt="Instagram">
+                                <a href="https://www.linkedin.com/in/reisalvaro/" target="_blank"
+                                    class="text-white">reisalvaro</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>
+                                <img src="../../img/instagram.png" height="20" alt="Instagram">
+                                <a href="https://www.instagram.com/_alvaroreis/" target="_blank"
+                                    class="text-white">_alvaroreis</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>Desenvolvido por <a href="https://github.com/alvaroreis" target="_blank"
+                                class="text-white">Álvaro
+                                Barros</a> </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/names.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/share.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

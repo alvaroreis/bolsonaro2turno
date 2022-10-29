@@ -2,10 +2,11 @@
 const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
 const type = "image/png";
-const codeInput = "input#tipo-padrao";
+const codeInput = "input#tipo-tag";
 const fileName = document.querySelector(codeInput).value.trim();
 const baseImage = new Image();
 baseImage.src = "./img/base.png";
+
 
 function roundRect(
     ctx,
@@ -27,12 +28,7 @@ function roundRect(
     ctx.lineTo(x + width - radius.tr, y);
     ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
     ctx.lineTo(x + width, y + height - radius.br);
-    ctx.quadraticCurveTo(
-        x + width,
-        y + height,
-        x + width - radius.br,
-        y + height
-    );
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius.br, y + height);
     ctx.lineTo(x + radius.bl, y + height);
     ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
     ctx.lineTo(x, y + radius.tl);
@@ -45,35 +41,32 @@ baseImage.addEventListener("load", () => {
     function draw() {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(baseImage, 0, 0);
-
         context.save();
+        context.translate(540, 390);
 
-        context.translate(540, 360);
-        context.rotate((-2 * Math.PI) / 180);
-
+        const name = document.querySelector(codeInput).value.trim().toUpperCase();
         context.textBaseline = "middle";
         context.font = "196.13px Bebas Neue";
-        const width = context.measureText(
-            document.querySelector(codeInput).value.trim()
-        ).width;
+        const width = context.measureText(name).width;
 
-        // context.fillStyle = "#1da60e";
-        context.fillStyle = "#19bb4c";
+        const paddingWidth = 50;
+
+        context.fillStyle = "#276825";
         roundRect(
             context,
-            -width / 2 - 40,
-            -220 / 2,
-            width + 40 * 2,
-            210,
-            21.66
+            -width / 2 - paddingWidth,
+            -225 / 2,
+            width + paddingWidth * 2,
+            210, {
+            tl: 50,
+            bl: 15,
+            br: 50,
+            tr: 15,
+        }
         );
 
         context.fillStyle = "#f0f0f0";
-        context.fillText(
-            document.querySelector(codeInput).value.trim(),
-            -width / 2,
-            20
-        );
+        context.fillText(name, -width / 2, 15);
 
         context.restore();
 
