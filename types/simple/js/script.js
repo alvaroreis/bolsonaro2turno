@@ -46,7 +46,7 @@ baseImage.addEventListener("load", () => {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(baseImage, 0, 0);
         context.save();
-        context.translate(540, 390);
+        context.translate(540, 360);
 
         const name = document.querySelector(codeInput).value.trim().toUpperCase();
         context.textBaseline = "middle";
