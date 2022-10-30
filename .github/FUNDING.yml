@@ -1,6 +1,8 @@
 # These are supported funding model platforms
-
 github: alvaroreis
+custom: ['https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY']
+
+# github: alvaroreis
 # patreon: # Replace with a single Patreon username
 # open_collective: # Replace with a single Open Collective username
 # ko_fi: # Replace with a single Ko-fi username
@@ -10,4 +12,4 @@ github: alvaroreis
 # issuehunt: # Replace with a single IssueHunt username
 # otechie: # Replace with a single Otechie username
 # lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
-custom: [https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY]
+# custom: [https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY]
