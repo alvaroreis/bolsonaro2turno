@@ -3,7 +3,6 @@ const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
 const type = "image/png";
 const codeInput = "input#tipo-tag";
-const fileName = document.querySelector(codeInput).value.trim();
 const baseImage = new Image();
 baseImage.src = "./img/base.png";
 
@@ -38,7 +37,7 @@ function roundRect(
 }
 
 
-document.querySelector("input#tipo-tag").value =
+document.querySelector(codeInput).value =
     names[Math.floor(Math.random() * names.length)];
 
 baseImage.addEventListener("load", () => {

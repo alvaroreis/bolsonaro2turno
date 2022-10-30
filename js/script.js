@@ -3,7 +3,6 @@ const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
 const type = "image/png";
 const codeInput = "input#tipo-padrao";
-const fileName = document.querySelector(codeInput).value.trim();
 const baseImage = new Image();
 baseImage.src = "./img/base.png";
 
@@ -41,7 +40,7 @@ function roundRect(
     ctx.fill();
 }
 
-document.querySelector("input#tipo-padrao").value =
+document.querySelector(codeInput).value =
     names[Math.floor(Math.random() * names.length)];
 
 
