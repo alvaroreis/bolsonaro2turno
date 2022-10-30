@@ -28,7 +28,7 @@ document.querySelector("a#shareLink").addEventListener("click", async (e) => {
     const data = {
         title: 'Flyer Bolsonaro 2º Turno',
         text: 'Gere um Flyer com o seu nome de apoio ao Bolsonaro 2º no Turno:',
-        url: 'https://alvaroreis.github.io/bolsonaro2turno/',
+        url: 'https://alvaroreis.github.io/bolsonaro2turno/types/simple/',
         // files: [image]
     }
     await share(data);

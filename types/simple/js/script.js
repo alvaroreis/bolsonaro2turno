@@ -37,6 +37,10 @@ function roundRect(
     ctx.fill();
 }
 
+
+document.querySelector("input#tipo-tag").value =
+    names[Math.floor(Math.random() * names.length)];
+
 baseImage.addEventListener("load", () => {
     function draw() {
         context.clearRect(0, 0, canvas.width, canvas.height);
