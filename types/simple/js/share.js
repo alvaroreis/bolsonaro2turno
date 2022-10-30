@@ -1,11 +1,16 @@
 async function file(file, docName) {
-    const name = null == docName ? fileName : docName;
-    const blob = await (await fetch(file)).blob();
-    return new File([blob], name + ".png", { type: blob.type, lastModified: new Date().getTime() });
+    try {
+        const fileName = document.querySelector(codeInput).value.trim();
+        const name = null == docName ? fileName : docName;
+        const blob = await (await fetch(file)).blob();
+        return new File([blob], name + ".png", { type: blob.type, lastModified: new Date().getTime() });
+    } catch (error) {
+        console.log('Ocorreu um erro ao buscar arquivo: Causa:', error)
+    }
 }
 
 async function share(data) {
-    if (navigator.canShare && navigator.canShare(data)) {
+    if (navigator.canShare(data)) {
         try {
             await navigator.share(data);
         } catch (error) {
@@ -17,27 +22,39 @@ async function share(data) {
 }
 
 document.querySelector("button#save").addEventListener("click", () => {
-    const a = document.createElement("a");
-    a.setAttribute("href", canvas.toDataURL(type));
-    a.setAttribute("download", fileName);
-    a.click();
+    try {
+        const fileName = document.querySelector(codeInput).value.trim();
+        const a = document.createElement("a");
+        a.setAttribute("href", canvas.toDataURL(type));
+        a.setAttribute("download", fileName);
+        a.click();
+    } catch (error) {
+        console.log('Ocorreu um erro ao salvar imagem: Causa:', error)
+    }
 });
 
 document.querySelector("a#shareLink").addEventListener("click", async (e) => {
-    // const image = await file("./img/image.png", "image")
-    const data = {
-        title: 'Flyer Bolsonaro 2º Turno',
-        text: 'Gere um Flyer com o seu nome de apoio ao Bolsonaro 2º no Turno:',
-        url: 'https://alvaroreis.github.io/bolsonaro2turno/types/simple/',
-        // files: [image]
+    try {
+        const url = window.location.href;
+        const data = {
+            title: 'Flyer Bolsonaro 2º Turno',
+            text: 'Gere um Flyer com o seu nome de apoio ao Bolsonaro 2º no Turno:',
+            url: url,
+        }
+        await share(data);
+    } catch (error) {
+        console.log('Ocorreu um erro compartilhar link: Causa:', error)
     }
-    await share(data);
 });
 
 document.querySelector("a#shareImage").addEventListener("click", async () => {
-    const dataUrl = canvas.toDataURL(type);
-    const image = await file(dataUrl)
-    const data = { title: 'Flyer Bolsonaro 2º Turno', files: [image] };
+    try {
+        const dataUrl = canvas.toDataURL(type);
+        const image = await file(dataUrl)
+        const data = { title: 'Flyer Bolsonaro 2º Turno', files: [image] };
 
-    await share(data);
+        await share(data);
+    } catch (error) {
+        console.log('Ocorreu um erro compartilhar imagem: Causa:', error)
+    }
 });
