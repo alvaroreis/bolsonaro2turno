@@ -6,25 +6,25 @@
   <link rel="icon" type="image/png" href="./img/favicon.png" />
 
   <!-- Primary Meta Tags -->
-  <title>Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome</title>
-  <meta name="title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+  <title>Eleições 2º Turno — Gerar flyer de apoio ao seu favorito com seu nome</title>
+  <meta name="title" content="Eleições 2º Turno — Gerar flyer de apoio ao seu favorito com seu nome" />
   <meta name="description"
-    content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+    content="Gere seu flyer personalizado com seu nome de apoio ao seu favorito para o segundo turno das eleições brasileira" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alvaroreis.github.io/bolsonaro2turno/" />
-  <meta property="og:title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+  <meta property="og:title" content="Eleições 2º Turno — Gerar flyer de apoio ao seu favorito com seu nome" />
   <meta property="og:description"
-    content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+    content="Gere seu flyer personalizado com seu nome de apoio ao seu favorito para o segundo turno das eleições brasileira" />
   <meta property="og:image" itemprop="image" content="https://alvaroreis.github.io/bolsonaro2turno/metadata.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://alvaroreis.github.io/bolsonaro2turno/" />
-  <meta property="twitter:title" content="Bolsonaro 2º Turno — Gerar flyer de apoio ao Bolsonaro com seu nome" />
+  <meta property="twitter:title" content="Eleições 2º Turno — Gerar flyer de apoio ao seu favorito com seu nome" />
   <meta property="twitter:description"
-    content="Gere seu flyer personalizado com seu nome de apoio ao Bolsonaro para o segundo turno das eleições brasileira" />
+    content="Gere seu flyer personalizado com seu nome de apoio ao seu favorito para o segundo turno das eleições brasileira" />
   <meta property="twitter:image" content="https://alvaroreis.github.io/bolsonaro2turno/metadata.png" />
 
   <meta charset="UTF-8" />
@@ -48,23 +48,20 @@
   <nav class="navbar navbar-expand-lg navbar-dark ">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://alvaroreis.github.io/bolsonaro2turno"><strong class="text-success">Flyer
-          Bolsonaro</strong></a>
+          Eleições</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://alvaroreis.github.io/bolsonaro2turno">Home</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Modelos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://alvaroreis.github.io/bolsonaro2turno/types/simple/">
-                  <img src="./types/simple/metadata.png" height="30px"> Amarelo (Tag) </a></li>
+              <li><a class="dropdown-item" id="modelo-link" href="#amarelo">
+                  <img src="metadata-amarelo.png" height="30px"> Amarelo (Tag)</a></li>
               <!-- <li>
                 <hr class="dropdown-divider">
               </li>
@@ -84,9 +81,17 @@
         <canvas width="1080" height="1080"></canvas>
       </header>
 
-      <main class=" mx-4">
+      <main class="mx-4">
 
-        <div class="input-group">
+        <div id="seleccione-presidente" class="btn-group" role="group" aria-label="Seleccione o presidente">
+          <input type="radio" class="btn-check" name="seleccione-presidente" id="seleccione-bolsonaro" autocomplete="off" checked>
+          <label class="btn" for="seleccione-bolsonaro">Bolsonaro</label>
+        
+          <input type="radio" class="btn-check" name="seleccione-presidente" id="seleccione-lula" autocomplete="off">
+          <label class="btn" for="seleccione-lula">Lula</label>
+        </div>
+
+        <div class="input-group mt-3">
           <input type="text" id="tipo-padrao" class="form-control" aria-label="Informe seu nome"
             placeholder="Informe seu nome">
           <button type="button" id="save" class=" btn btn-success fw-bold pl-4 pr-4">Salvar</button>
@@ -105,7 +110,7 @@
 
 
         <p class="px-3 mt-3">
-          <span class="text-warning text-uppercase"> Amanhã vamos ter o Flyer da vitória!</span> <br />
+          <span class="text-warning text-uppercase">Amanhã vamos ter o Flyer da vitória!</span><br />
           Colabore com esse projeto <a target="_blank" href="https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY"
             class="link-warning">clicando aqui</a>.
         </p>
@@ -177,6 +182,7 @@
       </footer>
     </div>
   </div>
+  <script src="./js/fontfaceobserver.standalone.js"></script>
   <script src="./js/names.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/share.js"></script>
