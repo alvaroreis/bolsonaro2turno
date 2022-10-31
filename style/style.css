@@ -65,6 +65,23 @@
 
 
 /*
+ * Customize president selection inputs
+ */
+#seleccione-presidente .btn {
+  color: white;
+}
+
+label[for="seleccione-bolsonaro"] {
+    background-color: #1d70b7 !important;
+}
+
+label[for="seleccione-lula"] {
+    background-color: #e63035 !important;
+    /* To get rid of weird effect on hover */
+    margin-left: 0px !important;
+}
+
+/*
  * Base structure
  */
 canvas {

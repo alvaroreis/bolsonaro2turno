@@ -1,8 +1,8 @@
-# Bolsonaro no 2° Turno
+# Flyer 2° Turno
 
 Aplicação que tem como intuito ajudar a [OPERAÇÃO VIRA VOTO](https://www.operacaoviravoto.com.br). Seja você também um agente da operação que vai reeleger o nosso presidente.
 
-#### Crie um flyer com seu nome de apoio ao presidente Bolsonaro [CLICANDO AQUI](https://alvaroreis.github.io/bolsonaro2turno).
+#### Crie um flyer com seu nome de apoio ao seu presidente preferido [CLICANDO AQUI](https://alvaroreis.github.io/bolsonaro2turno).
 
 ✌️Seja um colaborador desse projeto [CLICANDO AQUI](https://nubank.com.br/pagar/4ca3x/0fyqDWa5qY).
 
@@ -57,7 +57,7 @@ Aplicação que tem como intuito ajudar a [OPERAÇÃO VIRA VOTO](https://www.ope
 </p>
 
 <p align="center">Nossa maior fraqueza é desistir. O caminho mais certo para o sucesso é sempre tentar apenas uma vez mais.
-<br /> <strong><i>Thomas Edison</i></strong></p>
+<br /><strong><i>Thomas Edison</i></strong></p>
 <!-- 
 <p align="center">O sucesso é a soma de pequenos esforços repetidos dia após dia. <br /> <strong><i>Robert Collier</i></strong></p>
  -->
